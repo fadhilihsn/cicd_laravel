@@ -1,6 +1,6 @@
 
 #using this awesome prebuild image:
- FROM 'fadhilihsn/php-7.1-ngix:cicd'
+ FROM 'fadhilihsn/php-7.1-ngix:cicd_laravel'
  MAINTAINER fadhilihsn <fadhilihsn@gmail.com>
 
 #install prestissimo for faster deps instalation
@@ -15,7 +15,7 @@ COPY composer.json compose.json
 RUN composer install --prefer-dist --no-scripts --no-dev --no-autoloader && rm -rf /home/app/.composer
 
 #copy codebase
-COPY --chown==app:root . ./
+COPY --chown=app:root . ./
 
 
 #finish composer
