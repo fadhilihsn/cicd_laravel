@@ -1,6 +1,6 @@
 
 #using this awesome prebuild image:
- FROM 'fadhilihsn/php-7.1-ngix:cicd_laravel'
+ FROM 'fadhilihsn/php-7.1-ngix:cicd'
  MAINTAINER fadhilihsn <fadhilihsn@gmail.com>
 
 #install prestissimo for faster deps instalation
